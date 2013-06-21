@@ -3,7 +3,7 @@ tests for expresso
 */
 
 var util = require('util'),
-    memcache = require('memcache'),
+    memcache = require('../lib/memcache'),
     assert = require('assert'),
     port = 11211;
 

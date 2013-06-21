@@ -6,6 +6,9 @@
   "repository": "git://github.com/elbart/node-memcache.git",
   "author": "Tim Eggert <tim@elbart.com>",
   "main": "./lib/memcache",
+  "dependencies": {
+    "node-pool-monkey": "git://github.com/sricc/node-pool-monkey.git"
+  },
   "devDependencies": {
     "expresso": ">=0.7.0"
   },
