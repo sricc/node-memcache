@@ -8,10 +8,10 @@ function microtime(get_as_float) {
 }
 
 var onConnect = function() {
-	mcClient.get('test', function(err, data) {
-		util.debug(data);
-		mcClient.close();
-	});
+		mcClient.get('test', function(err, data) {
+			util.debug(data);
+			mcClient.close();
+		});
 };
 
 var benchmark = function() {
@@ -64,5 +64,5 @@ var decr = function() {
 
 mcClient = new memcache.Client();
 // mcClient.connect();
-mcClient.addHandler(onConnect);
+mcClient.addHandler(setKey);
 
